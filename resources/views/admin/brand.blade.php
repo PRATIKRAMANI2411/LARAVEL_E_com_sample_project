@@ -37,7 +37,7 @@
                         <td class="text-center">{{$list->name}}</td>
                         <td class="text-center">
                             @if ($list->image != '')
-                            <img width="80px;" src="{{asset('storage/media/'.$list->image)}}">
+                            <img width="80px;" src="{{asset('uploadedimages/'.$list->image)}}">
                             @endif
                         </td>
                         <td class="text-center">

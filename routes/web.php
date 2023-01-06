@@ -26,7 +26,7 @@ Route::get('/', function () {
 Route::get('admin', [AdminController::class, 'index']);
 Route::post('admin/auth', [AdminController::class, 'auth'])->name('admin.auth');
 
-// Route::group(['middleware' => 'admin_auth'], function(){
+Route::group(['middleware' => 'admin_auth'], function(){
     Route::get('admin/dashboard', [AdminController::class, 'dashboard']);
     //category route
     Route::get('admin/updatepasswork', [AdminController::class, 'updatepasswork']);
@@ -87,4 +87,4 @@ Route::post('admin/auth', [AdminController::class, 'auth'])->name('admin.auth');
         session()->flash('error', 'You are logged out successfully!!');
         return redirect('admin');
     });
-// });
+});
