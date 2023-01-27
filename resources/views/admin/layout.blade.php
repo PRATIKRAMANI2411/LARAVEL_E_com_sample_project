@@ -130,13 +130,13 @@
                             <a class="#" href="{{url('admin/color')}}">
                                 <i class="fas fa-paint-brush"></i>Color</a>
                         </li>
+                        <li class="@yield('tax_select')">
+                            <a class="#" href="{{url('admin/tax')}}">
+                                <i class="fa-brands fa-product-hunt"></i>Tax</a>
+                        </li>
                         <li class="@yield('product_select')">
                             <a class="#" href="{{url('admin/product')}}">
                                 <i class="fa-brands fa-product-hunt"></i>Product</a>
-                        </li>
-                        <li class="@yield('tax_select')">
-                            <a class="#" href="{{url('admin/tex')}}">
-                                <i class="fa-brands fa-product-hunt"></i>Tax</a>
                         </li>
                     </ul>
                 </nav>
